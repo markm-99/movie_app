@@ -99,7 +99,7 @@ git add .
 git commit -m "Initial commit"
 git push origin main -f 
 
-Then, it will ask you to put in your crendtials for github, provide the informationa and your project is now saved in that repo.
+Then, it will ask you to put in your credentials for github, provide the information and your project is now saved in that repo.
 
 Now Type following commands:
 
@@ -107,7 +107,7 @@ heroku create <appname>
 E.g: heroku create reviews99    (then your website url will be reviews99.herokuapp.com)
 git push heroku main
 
-If it shows, that the deployemnt was successfull, hurray you are almost done, if not please follow the steps more carefully. Since, you can't use sqlite database in heroku, your all database will be empty and it will create a postgres database. Then type the following commands to migrate your database.
+If it shows, that the deployment was successful, you are almost done. If not, please follow the steps more carefully. Since, you can't use sqlite database in heroku, your all database will be empty and it will create a postgres database. Then type the following commands to migrate your database.
 
 heroku run python manage.py makemigrations
 heroku run python manage.py migrate
