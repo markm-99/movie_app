@@ -1,6 +1,5 @@
 Credit: Onthir (YouTube Tutorial)
-
-Step 1: Install Heroku Toolbelt.
+# Step 1: Install Heroku Toolbelt
 
 First, go to heroku.com and create a free account, the download heroku cli from its website based on your operating system. Then, open command Prompt in the root directory of your project file. The type the following command:
 
@@ -8,7 +7,7 @@ heroku login
 
  This will prompt you to input your credentials to login to heroku. Provide your account details and move to the next step.
 
-Step 2: Make your Project Heroku Friendly.
+# Step 2: Make Your Project Heroku Friendly
 
 You can't just simply upload your website to heroku and it will display the contents. You have to make your project heroku friendly by adding the following files to the root directory of your project.
 
@@ -43,7 +42,7 @@ Runtime tells what version of python you are going to use. Type in the following
 
 python-3.7.0
 
-Step 3: Setup static files for live server
+# Step 3: Setup static files for live server
 
 In the settings.py file, at the end, add the following lines of code to serve your static files in a live server.
 
@@ -78,10 +77,9 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nsaOfficial.settings')
 
 application = get_wsgi_application()
 
-Step 4: Deployment
+# Step 4: Deployment
 
 Inorder to deploy your django app to heroku, you need to have a github or bitbucket account. After getting an account, create a repository and name it whatever you want. Then install git on your OS. Its pretty simple, simply search download git and install it. Then go to you project root and open command prompt or terminal or bash console or git console. Then type in the following commands.
-
 
 git init
 git remote add <your repo link>
