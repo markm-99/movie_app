@@ -82,8 +82,6 @@ Inorder to deploy your django app to heroku, you need to have a github or bitbuc
 
 git init
 git remote add <your repo link>
-E.g: git remote add https://github.com/markm-99/star
-
 
 git add .
 git commit -m "Initial commit"
@@ -94,7 +92,7 @@ Then, it will ask you to put in your credentials for github, provide the informa
 Now Type following commands:
 
 heroku create <appname>
-E.g: heroku create reviews99    (then your website url will be reviews99.herokuapp.com)
+E.g: heroku create reviews99    (then your website url will be project_name.herokuapp.com)
 git push heroku main
 
 If it shows, that the deployment was successful, you are almost done. If not, please follow the steps more carefully. Since, you can't use sqlite database in heroku, your all database will be empty and it will create a postgres database. Then type the following commands to migrate your database.
@@ -103,6 +101,3 @@ heroku run python manage.py makemigrations
 heroku run python manage.py migrate
 heroku run python manage.py createsuperuser
 Finally, heroku open, it will open your website. Then your website is now live.
-
-Credit: Onthir (YouTube Tutorial)
-
