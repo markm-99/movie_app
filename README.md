@@ -1,4 +1,3 @@
-Credit: Onthir (YouTube Tutorial)
 # Step 1: Install Heroku Toolbelt
 
 First, go to heroku.com and create a free account, the download heroku cli from its website based on your operating system. Then, open command Prompt in the root directory of your project file. The type the following command:
@@ -83,7 +82,7 @@ Inorder to deploy your django app to heroku, you need to have a github or bitbuc
 
 git init
 git remote add <your repo link>
-E.g: git remote add https://github.com/markm-99/
+E.g: git remote add https://github.com/markm-99/star
 
 
 git add .
@@ -104,3 +103,6 @@ heroku run python manage.py makemigrations
 heroku run python manage.py migrate
 heroku run python manage.py createsuperuser
 Finally, heroku open, it will open your website. Then your website is now live.
+
+Credit: Onthir (YouTube Tutorial)
+
